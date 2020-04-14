@@ -7,7 +7,11 @@ html {
   font-weight: bold;
 }
 
-.footer {
+header {
+
+}
+
+footer {
   background-color: #cfcfcf;
 }
 
@@ -15,11 +19,6 @@ a {
   /* color: #ffffff; */
   text-decoration: none;
 }
-
-.drop-menu {
-  background-color: #3a7f9d;
-}
-
 
 .btn {
   background-color: #3a7f9d;
@@ -40,4 +39,54 @@ a {
   background-color: #000;
   border-color: #000;
   color: #fff;
+}
+
+
+
+@media only screen and (min-width: 25em) {
+
+  .banner-text-homepage {
+    display: none;
+  }
+
+  .main-text-homepage {
+    display: inline;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+  }
+
+  .banner-text-homepage {
+    display: inline;
+  }
+
+  .main-text-homepage {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  /* .grid1 {
+    display: none;
+  } */
+
 }

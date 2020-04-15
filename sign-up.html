@@ -8,59 +8,62 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
 </head>
 <body>
 
-  <header class="grid island-1-4">
-    <nav class="unit xs-1-2 grid-middle">
-      <ul class="list-group-inline push-0">
-        <li class="btn"><a href="index.html">Home</a></li>
-        <!-- Features requirement = table -->
-        <li class="btn"><a href="tour.html">Features</a></li>
-        <!-- Sign Up requirement = form -->
-        <li class="btn"><a href="sign-up.html">Login</a></li>
+  <ul class="skip-links">
+    <li><a href="#main" tabindex="0">Jump to main content</a></li>
+    <li><a href="#nav" tabindex="0">Jump to navigation content</a></li>
+    <li><a href="#tours" tabindex="0">Jump to tours content</a></li>
+  </ul>
+
+  <header role="banner" class="masthead grid grid-middle gutter">
+    <nav role="navigation" id="nav" tabindex="0" class="nav unit xs-1 s-1 m-1-2 l-1-2 pad-t-1-2 pad-b-1-2">
+      <ul class="list-group-inline mega push-0">
+        <!-- <li><a class="ib gutter-1-4" href="index.html" tabindex="0"><span>Home</span></a></li> -->
+        <li class="btn btn-ghost btn-banner"><a href="index.html">Home</a></li>
+        <!-- <li><a class="ib gutter-1-4" href="tour.html" tabindex="0"><span>Features</span></a></li> -->
+        <li class="btn btn-ghost btn-banner"><a href="tour.html">Features</a></li>
+        <!-- <li><a class="ib gutter-1-4" href="sign-up.html" id="tickets" tabindex="0"><span>Sign Up</span></a></li> -->
+        <li class="btn btn-ghost btn-banner"><a href="sign-up.html">Sign Up</a></li>
       </ul>
     </nav>
-    <div class="unit xs-1-2">
-      <a class="right btn" href="sign-up.html" alt="log in">Login</a>
-      <a class="right btn btn-emph push-r-1-4" href="sign-up.html" alt="sign up">Sign Up</a>
+    <div class="push-0 unit xs-1 s-1 m-1-2 l-1-2 pad-t-1-2 pad-b-1-2">
+      <a class="right btn" href="sign-up.html">Login</a>
+      <a class="right btn btn-emph push-r-1-4" href="sign-up.html">Sign Up</a>
     </div>
+
   </header>
 
-  <main class="grid center-text">
-    <section class="unit xs-1 banner embed embed-3by1 push">
-      <img class="embed-item" src="images/index-banner.jpg" alt="">
-      <div class="banner-content absolute pin-c w-1 max-length gutter text-center">
-        <div class="unit xs-1-6 s-1-5 m-1-3 l-1-2">
-          <img class="img-flex max-width" src="images/squidsprintslogo.png">
+  <main role="main" id="main" tabindex="0">
+    <section id="tours">
+      <article class="banner embed embed-16by9">
+        <img class="embed-item" src="images/banner.jpg" alt="" aria-details="#banner">
+        <div class="banner-content pin-c w-1 max-length gutter text-center">
+          <img class="navimg" src="images/logo.png" alt="" aria-details="#ship">
+          <h2 class="push-1-2" id="#banner">Printing can be difficult, especially in high volume.<span class="emph"> Squids Prints</span> makes it easy.</h2>
+          <a class="btn btn-ghost btn-banner bold" href="tour.html">Find Out More!</a>
         </div>
-          <h1 class="peta ">Get Quality and Quantity<br> from your Printer</h1>
-          <div class= "unit xs-1 banner-text-homepage">
-            <p>Printing can be difficult, especially in high volume.<br><span class="emph">Squids Prints</span> makes it easy.</p>
-            <div class="banner-text-homepage">
-            <a href="tour.html" class="btn">Learn More</a>
-            <a href="sign-up.html" class="btn">Sign Up</a>
-          </div>
-        </div>
-      </div>
+      </article>
     </section>
 
-    <p class="unit xs-1 main-text-homepage">Printing can be difficult, especially in high volume.<br><span class="emph">Squids Prints</span> makes it easy.</p>
+    <!-- <section id="ships" tabindex="0">
+      <article class="island">
+        <div class="card embed embed-golden">
+          <div class="card-content pin-c w-1 max-length gutter text-center">
+            <h2 class="push-1-2">Heave Ho!</h2>
+            <p id="#ship">Weigh anchor and hoist the mizzen, ya old salt, aboard shipshape <i>Arrrgonaut</i>.</p>
+            <a class="btn btn-light bold" href="#">See the specs</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main> -->
 
-  </main>
-
-
-  <footer class="grid">
-    <div class="unit xs-1-2 grid-middle">
-      <ul class="list-group list-group-inline footer">
-        <li><a href="http://www.twitter.com" alt="twitter icon"><img class="icon i-16" src="images/social-media/twitter.png" alt=""></a></li>
-        <li><a href="http://www.instagram.com" alt="instagram icon"><img class="icon i-16" src="images/social-media/instagram.png" alt=""></a></li>
-        <li><a href="http://www.facebook.com" alt="facebook icon"><img class="icon i-16" src="images/social-media/facebook.png" alt=""></a></li>
-        <li><a href="http://www.linkedin.com" alt="linkedin Icon"><img class="icon i-16" src="images/social-media/linkedin.png" alt=""></a></li>
-      </ul>
-    </div>
-    <p class="unit xs-1-2 footer">Legal</p>
+  <footer role="contentinfo" id="contentinfo" tabindex="0" class="footer micro text-center island-1-2">
+    <p class="push-0">© Squids Prints</p>
   </footer>
-</div>
+
+</body>
 </html>

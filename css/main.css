@@ -20,7 +20,7 @@ a {
   font-weight: bold;
 }
 
-.p2 {
+.p2, .wp {
   color: #fff;
 }
 
@@ -145,7 +145,10 @@ a:focus {
 
 tbody tr:nth-child(odd) {
   background-color: #63a7ca;
+  color: #fff;
 }
+
+
 
 @media only screen and (min-width: 38em) {
 

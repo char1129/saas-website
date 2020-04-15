@@ -57,17 +57,19 @@ a {
 
 @media only screen and (min-width: 38em) {
 
-  html {
-    font-size: 110%;
+  .banner-text-homepage {
+    display: none;
   }
+
+  .main-text-homepage {
+    display: inline;
+  }
+
 
 }
 
 @media only screen and (min-width: 60em) {
 
-  html {
-    font-size: 120%;
-  }
 
   .banner-text-homepage {
     display: inline;
@@ -85,8 +87,10 @@ a {
     font-size: 130%;
   }
 
-  /* .grid1 {
+  /*
+  .grid1 {
     display: none;
   }
+  */
 
 }

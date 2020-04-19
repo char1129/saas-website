@@ -8,28 +8,40 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/splashcss.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
 </head>
 <body>
 
-  <ul class="skip-links">
+  <nav class="zindex-1000 menu-wrap list-group fixed text-center">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+      <div class="menu list-group fixed text-center">
+        <div>
+        <div>
+          <ul class="list-group">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tour.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="sign-up.html">Login/Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- <ul class="skip-links">
     <li><a href="#main" tabindex="0">Jump to main content</a></li>
     <li><a href="#nav" tabindex="0">Jump to navigation content</a></li>
     <li><a href="#tours" tabindex="0">Jump to tours content</a></li>
-  </ul>
+  </ul> -->
 
   <header role="banner" class="masthead grid grid-middle gutter">
-    <nav role="navigation" id="nav" tabindex="0" class="nav unit xs-1 s-1 m-1-2 l-1-2 pad-t-1-2 pad-b-1-2">
-      <ul class="list-group-inline mega push-0">
-        <!-- <li><a class="ib gutter-1-4" href="index.html" tabindex="0"><span>Home</span></a></li> -->
-        <li class="btn btn-ghost btn-banner"><a href="index.html">Home</a></li>
-        <!-- <li><a class="ib gutter-1-4" href="tour.html" tabindex="0"><span>Features</span></a></li> -->
-        <li class="btn btn-ghost btn-banner"><a href="tour.html">Features</a></li>
-        <!-- <li><a class="ib gutter-1-4" href="sign-up.html" id="tickets" tabindex="0"><span>Sign Up</span></a></li> -->
-        <li class="btn btn-ghost btn-banner"><a href="sign-up.html">Sign Up</a></li>
-      </ul>
-    </nav>
-    <div class="push-0 unit xs-1 s-1 m-1-2 l-1-2 pad-t-1-2 pad-b-1-2">
+
+    <!-- <div class="push-0 unit xs-1 s-1 m-1-3 l-1-3 pad-t-1-2 pad-b-1-2">
+      <img class="navimg" src="images/logo.png" alt="" aria-details="#ship">
+    </div> -->
+
+    <div class="push-0 unit xs-1 pad-b-1-2">
       <a class="right btn" href="sign-up.html">Login</a>
       <a class="right btn btn-emph push-r-1-4" href="sign-up.html">Sign Up</a>
     </div>
@@ -39,27 +51,20 @@
   <main role="main" id="main" tabindex="0">
     <section id="tours">
       <article class="banner embed embed-16by9">
-        <img class="embed-item" src="images/loginbanner.png" alt="" aria-details="#banner">
+        <img class="embed-item" src="images/planspage-banner.png" alt="" aria-details="#banner">
         <div class="banner-content pin-c w-1 max-length gutter text-center">
-          <img class="navimg" src="images/logo.png" alt="" aria-details="#ship">
-          <h2 class="push-1-2" id="#banner">Printing can be difficult, especially in high volume.<span class="emph"> Squids Prints</span> makes it easy.</h2>
-          <a class="btn btn-ghost btn-banner bold" href="tour.html">Find Out More!</a>
+          <img class="banimg" src="images/logo.png" alt="" aria-details="#ship">
+          <h1 class="push-1-2" id="#banner">Features</h1>
+          <h2>Think it up. Create it. We'll make it real.</h2>
+          <a class="btn btn-ghost bold btn-emph" href="tour.html">Sign Up!</a>
+          <a class="btn btn-ghost btn-banner" href="tour.html">Plans</a>
         </div>
       </article>
     </section>
 
-    <!-- <section id="ships" tabindex="0">
-      <article class="island">
-        <div class="card embed embed-golden">
-          <div class="card-content pin-c w-1 max-length gutter text-center">
-            <h2 class="push-1-2">Heave Ho!</h2>
-            <p id="#ship">Weigh anchor and hoist the mizzen, ya old salt, aboard shipshape <i>Arrrgonaut</i>.</p>
-            <a class="btn btn-light bold" href="#">See the specs</a>
-          </div>
-        </div>
-      </article>
+    <section>
     </section>
-  </main> -->
+  </main>
 
   <footer role="contentinfo" id="contentinfo" tabindex="0" class="footer micro text-center island-1-2">
     <p class="push-0">© Squids Prints</p>

@@ -8,92 +8,101 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/splashcss.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
 </head>
 <body>
 
-  <ul class="skip-links">
+  <nav class="zindex-1000 menu-wrap list-group fixed text-center">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+      <div class="menu list-group fixed text-center">
+        <div>
+        <div>
+          <ul class="list-group">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tour.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="sign-up.html">Login/Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- <ul class="skip-links">
     <li><a href="#main" tabindex="0">Jump to main content</a></li>
     <li><a href="#nav" tabindex="0">Jump to navigation content</a></li>
     <li><a href="#tours" tabindex="0">Jump to tours content</a></li>
-  </ul>
+  </ul> -->
 
-  <header role="banner" class="masthead grid grid-middle gutter">
-    <nav role="navigation" id="nav" tabindex="0" class="nav unit xs-1 s-1 m-1-2 l-1-2 pad-t-1-2 pad-b-1-2">
-      <ul class="list-group-inline mega push-0">
-        <!-- <li><a class="ib gutter-1-4" href="index.html" tabindex="0"><span>Home</span></a></li> -->
-        <li class="btn btn-ghost btn-banner"><a href="index.html">Home</a></li>
-        <!-- <li><a class="ib gutter-1-4" href="tour.html" tabindex="0"><span>Features</span></a></li> -->
-        <li class="btn btn-ghost btn-banner"><a href="tour.html">Features</a></li>
-        <!-- <li><a class="ib gutter-1-4" href="sign-up.html" id="tickets" tabindex="0"><span>Sign Up</span></a></li> -->
-        <li class="btn btn-ghost btn-banner"><a href="sign-up.html">Sign Up</a></li>
-      </ul>
-    </nav>
-    <div class="push-0 unit xs-1 s-1 m-1-2 l-1-2 pad-t-1-2 pad-b-1-2">
+  <header class="masthead grid grid-middle gutter">
+    <!-- <div class="push-0 unit xs-1 s-1 m-1-3 l-1-3 pad-t-1-2 pad-b-1-2">
+      <img class="navimg" src="images/logo.png" alt="" aria-details="#ship">
+    </div> -->
+
+    <div class="push-0 unit xs-1 pad-b-1-2">
       <a class="right btn" href="sign-up.html">Login</a>
       <a class="right btn btn-emph push-r-1-4" href="sign-up.html">Sign Up</a>
     </div>
 
   </header>
 
-  <main role="main" id="main" tabindex="0">
-    <section id="tours">
+  <main>
+    <section>
       <article class="banner embed embed-16by9">
-        <img class="embed-item" src="images/planspage_banner.png" alt="" aria-details="#banner">
+        <img class="embed-item" src="images/planspage-banner.png" alt="" aria-details="#banner">
         <div class="banner-content pin-c w-1 max-length gutter text-center">
-          <img class="navimg" src="images/logo.png" alt="" aria-details="#ship">
+          <img class="banimg" src="images/logo.png" alt="" aria-details="#ship">
           <h1 class="push-1-2" id="#banner">Features</h1>
+          <h2>Think it up. Create it. We'll make it real.</h2>
           <a class="btn btn-ghost bold btn-emph" href="tour.html">Sign Up!</a>
           <a class="btn btn-ghost btn-banner" href="tour.html">Plans</a>
         </div>
       </article>
     </section>
 
-    <section id="features" tabindex="0">
+    <section class="pad-b-2" id="features" tabindex="0">
       <div class="wrapper">
         <div class="table-wrapper scrollable">
           <table class="push-0">
-            <caption class="mega">Think it up. Create it. We'll make it real.</caption>
+            <caption class="mega wp">-</caption>
             <thead>
               <tr>
-                <!-- <th class="name" scope="col">Paper</th>
-                <th class="star" scope="col">Books</th>
-                <th class="year" scope="col">Billboards</th>
-                <th class="distance" scope="col">Flyers</th>
-                <th class="notes" scope="col">Other</th> -->
+                <th class="island tera" scope="row">Service</th>
+                <th class="island tera" scope="row" colspan="4">Details</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th class="emph wp" scope="row">Paper</th>
+                <th class="emph wp island" scope="row">Paper</th>
                 <td>Weights of paper. <br>We can find which paper works for your project.</td>
                 <td>No matter how large you want to go. We can print it!</td>
                 <td>2300 ly</td>
                 <td>First confirmed exoplanet</td>
               </tr>
               <tr>
-                <th class="emph" scope="row">Books</th>
+                <th class="emph island" scope="row">Books</th>
                 <td>Binding Styles. <br>Saddle stitching</td>
                 <td>1995</td>
                 <td>50 ly</td>
                 <td>First confirmed exoplanet orbiting a main-sequence star</td>
               </tr>
               <tr>
-                <th class="emph wp" scope="row">Billboards</th>
+                <th class="emph wp island" scope="row">Billboards</th>
                 <td>No matter how large you want to go. We can make it happen.</td>
                 <td>2001</td>
                 <td>150 ly</td>
                 <td>First exoplanet with a confirmed atmosphere</td>
               </tr>
               <tr>
-                <td class="emph">Brochures and Flyers</td>
+                <td class="emph island">Brochures and Flyers</td>
                 <th scope="row">Brochures</th>
                 <td>Gate-Fold, Bi-Fold, Tri-Fold, Z-Fold</td>
                 <td class="bold">Flyers</td>
                 <td>Handbill, Poster, Pamphlet</td>
               </tr>
               <tr>
-                <th class="emph wp" scope="row">Other Services</th>
+                <th class="emph wp island" scope="row">Other Services</th>
                 <td>Cards</td>
                 <td>Diagrams</td>
                 <td>Kiosk Banners</td>
@@ -109,6 +118,7 @@
         </div>
       </div>
     </section>
+
   </main>
 
   <footer role="contentinfo" id="contentinfo" tabindex="0" class="footer micro text-center island-1-2">

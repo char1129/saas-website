@@ -199,16 +199,20 @@ tbody tr:nth-child(odd) {
   color: #000;
 }
 
-.hidden {
-  display: block;
-}
-
-input, option, select, textarea  {
+input, option, select, textarea {
   border-color: #3a7f9d;
 }
 
 input[type="checkbox"] + label::before {
   border-color: #3a7f9d;
+}
+
+.hiddensmall {
+  display: block;
+}
+
+.hiddenlarge {
+  display: none;
 }
 
 
@@ -217,7 +221,6 @@ input[type="checkbox"] + label::before {
 38em = 608px
 60em = 900px
 90em = 1440px
-
 Must be optimized up to 1900px*/
 
 @media only screen and (min-width: 25em) {
@@ -258,8 +261,17 @@ Must be optimized up to 1900px*/
     width: 33em;
   }
 
+  .hiddenlarge {
+    display: block;
+  }
+
+  .hiddensmall {
+    display: none;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
+
 
 }

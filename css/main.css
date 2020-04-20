@@ -173,6 +173,10 @@ tbody tr:nth-child(odd) {
 .p2, .wp {
   color: #fff;
 }
+/*
+.table-wrapper {
+  overflow: visible;
+} */
 
 .wrapper {
   max-width: 90em;

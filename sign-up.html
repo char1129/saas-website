@@ -65,7 +65,7 @@
                 <input id="passwordlogin" type="password" required>
               </div>
             </div>
-            <div class="unit xs-1 push">
+            <div class="unit xs-1 push-1-2">
               <button class="btn btn-emph bold center" type="submit">Login</button>
             </div>
           </div>
@@ -81,7 +81,7 @@
         <p>Sign up now! It's free!</p>
         <form method="POST" action="https://formspree.io/mvorakyw">
           <fieldset class="one">
-            <legend class="push italic unit xs-1">Personal details</legend>
+            <legend class="push-1-4 italic unit xs-1">Personal details</legend>
             <div class="push">
               <label for="first">First Name</label>
               <input id="first" required>
@@ -387,8 +387,8 @@
               <input id="postalcode" placeholder="A1A 1A1" required>
             </div>
           </fieldset>
-          <fieldset>
-            <legend class="push italic">Company Details</legend>
+          <fieldset class="one">
+            <legend class="push-1-4 italic unit xs-1">Company Details</legend>
             <div class="push">
               <label for="postalcode">Company Name</label>
               <input id="postalcode" required>
@@ -400,16 +400,14 @@
             <div class="push">
               <label for="email"> Company Email <span class="micro italic"><span></label>
               <input id="email" type="email" placeholder="sarah@squidsprints.com" required>
-              <p class="italic micro">For print notifications and designer correspondance.</p>
             </div>
-            <div class="push">
+            <div class="push ">
               <label for="tel">Company Contact Number</label>
               <input id="tel" type="number" inputmode="numeric" required>
             </div>
             <div class="push">
               <label for="address">Company Address</label>
-              <input id="address" required>
-              <p class="italic micro">For deliveries.</p>
+              <input id="address" placeholder="for deliveries" required>
             </div>
             <div class="push">
               <label for="city">City/Town</label>
@@ -687,8 +685,8 @@
               <option>Zimbabwe</option>
               </select>
           </fieldset>
-          <fieldset>
-            <legend class="push italic">Plan and Payment</legend>
+          <fieldset class="one">
+            <legend class="push-1-4 italic unit xs-1">Plan and Payment</legend>
             <div class="push">
               <label for="plan">Plan</label>
               <select id="plan" name="plan">
@@ -704,24 +702,68 @@
             </div>
             <div class="push">
               <label for="security">Security Code</label>
-              <input type="number" id="security">
-              <p class="italic micro">3 or 4 digit number</p>
+              <input type="number" id="security" placeholder="3 or 4 digit number">
             </div>
             <div class="push">
               <label for="date">Expiry Date</label>
               <input id="date" type="date">
             </div>
-
-
-
-
-            <div class="push">
-              <label for="details">Why do you want to go to Mars?</label>
+          </fieldset>
+          <div class="container">
+            <fieldset class="push">
+              <legend class="push-1-4 italic">Which of our print services were you wanting to utilize?</legend>
+              <div class="grid">
+                <div class="unit xs-1 s-1 m-1-2 l-1-2">
+                  <div class="pad-t-1-8">
+                    <input id="dig" type="checkbox">
+                    <label for="dig">Book Binding</label>
+                  </div>
+                  <div class="pad-t-1-8">
+                    <input id="dirty" type="checkbox">
+                    <label for="dirty">Page Printing</label>
+                  </div>
+                  <div class="pad-t-1-8">
+                    <input id="lift" type="checkbox">
+                    <label for="lift">Brochures/Pamphlets</label>
+                  </div>
+                  <div class="pad-t-1-8">
+                    <input id="drive" type="checkbox">
+                    <label for="drive">Billboards</label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="push">
+                <legend class="push-1-4 italic">Which of our support services were you wanting to utilize?</legend>
+                <div class="grid">
+                  <div class="unit xs-1 s-1 m-1-2 l-1-2">
+                    <div class="pad-t-1-8">
+                      <input id="dig" type="checkbox">
+                      <label for="dig">Page Layout</label>
+                    </div>
+                    <div class="pad-t-1-8">
+                      <input id="dirty" type="checkbox">
+                      <label for="dirty">Proofing</label>
+                    </div>
+                    <div class="pad-t-1-8">
+                      <input id="lift" type="checkbox">
+                      <label for="lift">Copywriting</label>
+                    </div>
+                    <div class="pad-t-1-8">
+                      <input id="drive" type="checkbox">
+                      <label for="drive">Ground-Up Services</label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            <fieldset class="one unit xs-1">
+              <legend class="italic bold">Specifics <span class="micro italic">(optional)</span></legend>
+              <div class="push">
+              <label for="details" class="push-1-4">Were there any specific details you wanted us to know regarding your printing needs?</label>
               <textarea id="details" name="message" required></textarea>
-              <input type="hidden" name="secret" value="Request to join the mission">
+              <input type="hidden" name="secret" value="Important details">
             </div>
             <div>
-              <button class="btn btn-light center" type="submit">Register for the trip!</button>
+              <button class="btn btn-light center" type="submit">Submit</button>
             </div>
           </fieldset>
         </form>

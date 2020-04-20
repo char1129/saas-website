@@ -179,6 +179,11 @@ tfoot {
   background-color: #fff;
 }
 
+/* td {
+  min-width: 15rem;
+  width: 100%;
+} */
+
 .emph {
   color: #3a7f9d;
 }
@@ -198,7 +203,7 @@ tfoot {
 
 .wrapper {
   max-width: 90em;
-  width: 90%;
+  width: 100%;
 }
 
 .loginbck {

@@ -9,63 +9,125 @@
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/splashcss.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <nav class="zindex-1000 menu-wrap list-group fixed text-center">
-    <input type="checkbox" class="toggler">
-    <div class="hamburger"><div></div></div>
-      <div class="menu list-group fixed text-center">
-        <div>
-        <div>
-          <ul class="list-group">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tour.html">Features</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="sign-up.html">Login/Sign Up</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!-- <ul class="skip-links">
+  <ul class="skip-links">
     <li><a href="#main" tabindex="0">Jump to main content</a></li>
     <li><a href="#nav" tabindex="0">Jump to navigation content</a></li>
-    <li><a href="#tours" tabindex="0">Jump to tours content</a></li>
-  </ul> -->
+    <li><a href="#signup" tabindex="0">Jump to signup</a></li>
+  </ul>
 
-  <header role="banner" class="masthead grid grid-middle gutter">
+  <header role="banner" class="masthead grid grid-middle">
+  <nav role="navigation" id="nav" tabindex="0" class=" unit xs-1 zindex-1000 menu-wrap list-group fixed text-center">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger">
+      <div>
+      </div>
+    </div>
+    <div class="menu list-group fixed text-center">
+      <div>
+      <div>
+        <ul class="list-group">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tour.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="sign-up.html">Login/Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </nav>
 
-    <!-- <div class="push-0 unit xs-1 s-1 m-1-3 l-1-3 pad-t-1-2 pad-b-1-2">
-      <img class="navimg" src="images/logo.png" alt="" aria-details="#ship">
-    </div> -->
-
-    <nav class="push-0 unit xs-1 pad-b-1-2">
+    <div id="signup" class="push-0 unit xs-1 pad-b-1-2">
       <ul>
-        <li><a class="right btn" href="sign-up.html">Login</a><il>
-        <li><a class="right btn btn-emph push-t-0 push-r-1-4" href="sign-up.html">Sign Up</a><il>
-      <ul>
-    </nav>
+        <li><a class="right btn push-r-1-4" href="sign-up.html">Login</a></li>
+        <li><a class="right btn btn-emph push-t-0 push-r-1-4" href="sign-up.html">Sign Up</a></li>
+      </ul>
+    </div>
 
-  </header>
-
-  <main role="main" id="main" tabindex="0">
-    <section id="tours">
+    <section id="bannercontent" class="unit xs-1">
       <article class="banner embed embed-16by9">
-        <img class="embed-item" src="images/planspage-banner.png" alt="" aria-details="#banner">
+        <img class="embed-item" src="images/banner.jpg" alt="" aria-details="#banner">
         <div class="banner-content pin-c w-1 max-length gutter text-center">
-          <img class="banimg" src="images/logo.png" alt="" aria-details="#ship">
-          <h1 class="push-1-2" id="#banner">Features</h1>
-          <h2>Think it up. Create it. We'll make it real.</h2>
-          <a class="btn btn-ghost bold btn-emph" href="tour.html">Sign Up!</a>
-          <a class="btn btn-ghost btn-banner" href="tour.html">Plans</a>
+          <img class="banimg pad-t" src="images/logo.png" alt="" aria-details="#ship">
+          <h1 class="yotta push-0">Printing can be difficult.</h1>
+          <h2><span class="emph"> Squids Prints</span> makes it easy.</h2>
+          <!-- <a class="btn btn-ghost btn-banner bold" href="tour.html">Find Out More!</a> -->
+          <div class="grid grid-middle loginbck">
+            <div class="container unit xs-1 s-1 m-1 l-2-3 xl-1-2 pad-t-1-2">
+            <div class="inline-block">
+              <label class="wp" for="email">Email</label>
+              <input id="email" type="email" required>
+            </div>
+            <div class="inline-block">
+              <label class="wp" for="password">Password</label>
+              <input id="password" type="password" required>
+            </div>
+          </div>
+          <div class= "unit xs-1 push">
+            <button class="btn btn-emph center" type="submit">Login</button>
+          </div>
+          </div>
         </div>
       </article>
     </section>
+  </header>
 
-    <section>
-    </section>
+  <main>
+    <section class="grid grid-middle">
+    <div class="container unit xs-1 s-1 m-1 l-2-3 xl-1-2 island">
+      <h3 class="pad-t push-0">Want to go to Mars?</h3>
+      <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+      <form method="POST" action="https://formspree.io/mvorakyw">
+        <fieldset class="one">
+          <legend class="push italic unit xs-1">Personal details</legend>
+          <div class="push">
+            <label for="first">First Name</label>
+            <input id="first" required>
+          </div>
+          <div class="push">
+            <label for="last">Last Name</label>
+            <input id="last" name="last" required>
+          </div>
+          <div class="push">
+            <label for="email">Email</label>
+            <input id="email" type="email" required>
+          </div>
+          <div class="push">
+            <label for="password">Password</label>
+            <input id="password" type="password" required>
+          </div>
+          <div class="push">
+            <label for="physicalfitness">Position in company</label>
+            <select id="physicalfitness" name="markbotreq">
+              <option>Owner</option>
+              <option>CEO</option>
+              <option>VP/Director</option>
+              <option>Senior Management</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="address">Address</label>
+            <textarea id="address" required></textarea>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="push italic">Company Details</legend>
+          <div class="push">
+            <label for="details">Why do you want to go to Mars?</label>
+            <textarea id="details" name="message" required></textarea>
+            <input type="hidden" name="secret" value="Request to join the mission">
+          </div>
+          <div>
+            <button class="btn btn-light center" type="submit">Register for the trip!</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </section>
   </main>
 
   <footer role="contentinfo" id="contentinfo" tabindex="0" class="footer micro text-center island-1-2">

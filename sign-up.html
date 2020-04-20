@@ -96,7 +96,7 @@
             </div>
             <div class="push">
               <label for="tel">Phone Number</label>
-              <input id="tel" type="number" inputmode="numeric" required>
+              <input id="tel" type="number" required>
             </div>
             <div class="push">
               <label for="password">Password</label>
@@ -112,7 +112,7 @@
             </div>
             <div class="push">
               <label for="province">Province</label>
-              <select id="province" list="province" required>
+              <select id="province" name="province" required>
                 <option>Alberta</option>
                 <option>British Columbia</option>
                 <option>Manitoba</option>
@@ -130,7 +130,7 @@
             </div>
             <div class="push">
               <label for="country">Country</label>
-              <select id="country" list="country" required>
+              <select id="country" name="country" required>
               <option>Afghanistan</option>
               <option>Åland Islands</option>
               <option>Albania</option>
@@ -390,32 +390,32 @@
           <fieldset class="one">
             <legend class="push-1-4 italic unit xs-1">Company Details</legend>
             <div class="push">
-              <label for="postalcode">Company Name</label>
-              <input id="postalcode" required>
+              <label for="compname">Company Name</label>
+              <input id="compname" required>
             </div>
             <div class="push">
-              <label for="postalcode">Attention to:</label>
-              <input id="postalcode" optional>
+              <label for="atto">Attention to:</label>
+              <input id="atto" optional>
             </div>
             <div class="push">
-              <label for="email"> Company Email <span class="micro italic"><span></label>
-              <input id="email" type="email" placeholder="sarah@squidsprints.com" required>
+              <label for="compmail"> Company Email <span class="micro italic"><span></label>
+              <input id="compmail" type="email" placeholder="sarah@squidsprints.com" required>
             </div>
             <div class="push ">
-              <label for="tel">Company Contact Number</label>
-              <input id="tel" type="number" inputmode="numeric" required>
+              <label for="comptel">Company Contact Number</label>
+              <input id="comptel" type="number" required>
             </div>
             <div class="push">
-              <label for="address">Company Address</label>
-              <input id="address" placeholder="for deliveries" required>
+              <label for="compadd">Company Address</label>
+              <input id="compadd" placeholder="for deliveries" required>
             </div>
             <div class="push">
-              <label for="city">City/Town</label>
-              <input id="city" required>
+              <label for="compcity">City/Town</label>
+              <input id="compcity" required>
             </div>
             <div class="push">
-              <label for="province">Province</label>
-              <select id="province" list="province" required>
+              <label for="comprov">Province</label>
+              <select id="comprov" name="province" required>
                 <option>Alberta</option>
                 <option>British Columbia</option>
                 <option>Manitoba</option>
@@ -432,8 +432,8 @@
               </select>
             </div>
             <div class="push">
-              <label for="country">Country</label>
-              <select id="country" list="country" required>
+              <label for="comcount">Country</label>
+              <select id="compcount" name="country" required>
               <option>Afghanistan</option>
               <option>Åland Islands</option>
               <option>Albania</option>
@@ -684,6 +684,10 @@
               <option>Zambia</option>
               <option>Zimbabwe</option>
               </select>
+              <div class="push">
+                <label for="comppost">Company Postal Code</label>
+                <input id="comppost" placeholder="A1A 1A1" required>
+              </div>
           </fieldset>
           <fieldset class="one">
             <legend class="push-1-4 italic unit xs-1">Plan and Payment</legend>
@@ -715,20 +719,20 @@
               <div class="grid">
                 <div class="unit xs-1 s-1 m-1-2 l-1-2">
                   <div class="pad-t-1-8">
-                    <input id="dig" type="checkbox">
-                    <label for="dig">Book Binding</label>
+                    <input id="bookb" type="checkbox">
+                    <label for="bookb">Book Binding</label>
                   </div>
                   <div class="pad-t-1-8">
-                    <input id="dirty" type="checkbox">
-                    <label for="dirty">Page Printing</label>
+                    <input id="pagep" type="checkbox">
+                    <label for="pagep">Page Printing</label>
                   </div>
                   <div class="pad-t-1-8">
-                    <input id="lift" type="checkbox">
-                    <label for="lift">Brochures/Pamphlets</label>
+                    <input id="bp" type="checkbox">
+                    <label for="bp">Brochures/Pamphlets</label>
                   </div>
                   <div class="pad-t-1-8">
-                    <input id="drive" type="checkbox">
-                    <label for="drive">Billboards</label>
+                    <input id="bb" type="checkbox">
+                    <label for="bb">Billboards</label>
                   </div>
                 </div>
               </fieldset>
@@ -737,20 +741,20 @@
                 <div class="grid">
                   <div class="unit xs-1 s-1 m-1-2 l-1-2">
                     <div class="pad-t-1-8">
-                      <input id="dig" type="checkbox">
-                      <label for="dig">Page Layout</label>
+                      <input id="pagel" type="checkbox">
+                      <label for="pagel">Page Layout</label>
                     </div>
                     <div class="pad-t-1-8">
-                      <input id="dirty" type="checkbox">
-                      <label for="dirty">Proofing</label>
+                      <input id="proof" type="checkbox">
+                      <label for="proof">Proofing</label>
                     </div>
                     <div class="pad-t-1-8">
-                      <input id="lift" type="checkbox">
-                      <label for="lift">Copywriting</label>
+                      <input id="cc" type="checkbox">
+                      <label for="cc">Copywriting</label>
                     </div>
                     <div class="pad-t-1-8">
-                      <input id="drive" type="checkbox">
-                      <label for="drive">Ground-Up Services</label>
+                      <input id="gndup" type="checkbox">
+                      <label for="gndup">Ground-Up Services</label>
                     </div>
                   </div>
                 </fieldset>

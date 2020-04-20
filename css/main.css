@@ -203,6 +203,27 @@ tbody tr:nth-child(odd) {
   display: block;
 }
 
+input, option, select, textarea  {
+  border-color: #3a7f9d;
+}
+
+input[type="checkbox"] + label::before {
+  border-color: #3a7f9d;
+}
+
+
+/* Entered above here should be optimized for screens between 320px-400px
+25em = 400px
+38em = 608px
+60em = 900px
+90em = 1440px
+
+Must be optimized up to 1900px*/
+
+@media only screen and (min-width: 25em) {
+
+}
+
 @media only screen and (min-width: 38em) {
 
   .logo {
@@ -236,5 +257,9 @@ tbody tr:nth-child(odd) {
   textarea {
     width: 33em;
   }
+
+}
+
+@media only screen and (min-width: 90em) {
 
 }

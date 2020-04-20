@@ -20,25 +20,25 @@
   </ul>
 
   <header role="banner" class="masthead grid grid-middle">
-  <nav role="navigation" id="nav" tabindex="0" class=" unit xs-1 zindex-1000 menu-wrap list-group fixed text-center">
-    <input type="checkbox" class="toggler">
-    <div class="hamburger">
-      <div>
+    <nav role="navigation" id="nav" tabindex="0" class=" unit xs-1 zindex-1000 menu-wrap list-group fixed text-center">
+      <input type="checkbox" class="toggler" id="dropdown" aria-label="drop down menu">
+      <div class="hamburger">
+        <div>
+        </div>
       </div>
-    </div>
-    <div class="menu list-group fixed text-center">
-      <div>
-      <div>
-        <ul class="list-group">
-          <li><a href="index.html" aria-label="Go to Homepage">Home</a></li>
-          <li><a href="tour.html" aria-label="Go to Features">Features</a></li>
-          <li><a href="pricing.html" aria-label="Go to Plans">Plans</a></li>
-          <li><a href="sign-up.html" aria-label="Go to Sign Up and Login Page">Login/Sign Up</a></li>
-        </ul>
+      <div class="menu list-group fixed text-center">
+        <div>
+          <div>
+            <ul class="list-group">
+              <li><a href="index.html" aria-label="Go to Homepage">Home</a></li>
+              <li><a href="tour.html" aria-label="Go to Features">Features</a></li>
+              <li><a href="pricing.html" aria-label="Go to Plans">Plans</a></li>
+              <li><a href="sign-up.html" aria-label="Go to Sign Up and Login Page">Login/Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  </nav>
+    </nav>
 
     <div id="signup" class="push-0 unit xs-1 pad-b-1-2">
       <ul>
@@ -54,84 +54,107 @@
           <img class="banimg pad-t" src="images/logo.png" alt="" aria-details="#ship">
           <h1 class="yotta push-0">Printing can be difficult.</h1>
           <h2><span class="emph"> Squids Prints</span> makes it easy.</h2>
-          <!-- <a class="btn btn-ghost btn-banner bold" href="tour.html">Find Out More!</a> -->
           <div class="grid grid-middle loginbck">
             <div class="container unit xs-1 s-1 m-1 l-2-3 xl-1-2 pad-t-1-2">
-            <div class="inline-block">
-              <label class="wp" for="emaillogin">Email</label>
-              <input id="emaillogin" type="email" required>
+              <div class="inline-block">
+                <label class="wp" for="emaillogin">Email</label>
+                <input id="emaillogin" type="email" required>
+              </div>
+              <div class="inline-block">
+                <label class="wp" for="passwordlogin">Password</label>
+                <input id="passwordlogin" type="password" required>
+              </div>
             </div>
-            <div class="inline-block">
-              <label class="wp" for="passwordlogin">Password</label>
-              <input id="passwordlogin" type="password" required>
+            <div class="unit xs-1 push">
+              <button class="btn btn-emph center" type="submit">Login</button>
             </div>
-          </div>
-          <div class= "unit xs-1 push">
-            <button class="btn btn-emph center" type="submit">Login</button>
-          </div>
           </div>
         </div>
       </article>
     </section>
   </header>
 
-  <main>
+  <main role="main" id="main">
     <section class="grid grid-middle">
-    <div class="container unit xs-1 s-1 m-1 l-2-3 xl-1-2 island">
-      <h3 class="pad-t push-0">Don't have an account?</h3>
-      <p>Sign up now! It's free!</p>
-      <form method="POST" action="https://formspree.io/mvorakyw">
-        <fieldset class="one">
+      <div class="container unit xs-1 s-1 m-1 l-2-3 xl-1-2 island">
+        <h3 class="pad-t push-0">Don't have an account?</h3>
+        <p>Sign up now! It's free!</p>
+        <form method="POST" action="https://formspree.io/mvorakyw">
+          <fieldset class="one">
           <legend class="push italic unit xs-1">Personal details</legend>
-          <div class="push">
-            <label for="first">First Name</label>
-            <input id="first" required>
-          </div>
-          <div class="push">
-            <label for="last">Last Name</label>
-            <input id="last" name="last" required>
-          </div>
-          <div class="push">
-            <label for="email">Email</label>
-            <input id="email" type="email" required>
-          </div>
-          <div class="push">
-            <label for="password">Password</label>
-            <input id="password" type="password" required>
-          </div>
-          <div class="push">
-            <label for="physicalfitness">Position in company</label>
-            <select id="physicalfitness" name="markbotreq">
-              <option>Owner</option>
-              <option>CEO</option>
-              <option>VP/Director</option>
-              <option>Senior Management</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div>
-            <label for="address">Address</label>
-            <textarea id="address" required></textarea>
-          </div>
-        </fieldset>
-        <fieldset>
+            <div class="push">
+              <label for="first">First Name</label>
+              <input id="first" required>
+            </div>
+            <div class="push">
+              <label for="last">Last Name</label>
+              <input id="last" name="last" required>
+            </div>
+              <div class="push">
+              <label for="email">Email</label>
+              <input id="email" type="email" required>
+            </div>
+            <div class="push">
+              <label for="password">Password</label>
+              <input id="password" type="password" required>
+            </div>
+            <div class="push">
+              <label for="physicalfitness">Position in company</label>
+              <select id="physicalfitness" name="markbotreq">
+                <option>Owner</option>
+                <option>CEO</option>
+                <option>VP/Director</option>
+                <option>Senior Management</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="address">Address</label>
+              <textarea id="address" required></textarea>
+            </div>
+          </fieldset>
+          <fieldset>
           <legend class="push italic">Company Details</legend>
-          <div class="push">
-            <label for="details">Why do you want to go to Mars?</label>
-            <textarea id="details" name="message" required></textarea>
-            <input type="hidden" name="secret" value="Request to join the mission">
-          </div>
-          <div>
-            <button class="btn btn-light center" type="submit">Register for the trip!</button>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </section>
+            <div class="push">
+              <label for="details">Why do you want to go to Mars?</label>
+              <textarea id="details" name="message" required></textarea>
+              <input type="hidden" name="secret" value="Request to join the mission">
+            </div>
+            <div>
+              <button class="btn btn-light center" type="submit">Register for the trip!</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <footer role="contentinfo" id="contentinfo" tabindex="0" class="footer micro text-center island-1-2">
-    <p class="push-0">© Squids Prints</p>
+  <footer role="contentinfo" id="footer" class="footer grid micro">
+    <ul class="unit xs-1-2 list-group-inline push-0 island-1-4">
+      <li>
+        <i class="icon i-18">
+          <a href="http://www.facebook.com"><img src="images/social-media/facebook.png" alt="facebook icon"></a>
+        </i>
+      </li>
+      <li>
+        <i class="icon i-18">
+          <a href="http://www.instagram.com"><img src="images/social-media/instagram.png" alt="instagram icon"></a>
+        </i>
+      </li>
+      <li>
+        <i class="icon i-18">
+          <a href="http://www.linkedin.com"><img src="images/social-media/linkedin.png" alt="linkedin icon"></a>
+        </i>
+      </li>
+      <li>
+        <i class="icon i-18">
+          <a href="http://www.twitter.com"><img src="images/social-media/twitter.png" alt="twitter icon"></a>
+        </i>
+      </li>
+    </ul>
+    <div class="unit xs-1-2 bold inline-block pad-t-1-4">
+      <p class="right push-0">© Squids Prints</p>
+    </div>
   </footer>
 
 </body>

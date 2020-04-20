@@ -32,11 +32,18 @@ footer {
   min-width: 320px;
   color: #000;
 
-  /* position: relative;
+  /*
+  position: relative;
   overflow: hidden;
   max-height: 4rem;
   with added img-flex tag to banner image */
 }
+
+/*
+.banner-content {
+  position: absolute;
+  color: #fff;
+} */
 
 .banimg {
   width: 70%;
@@ -177,6 +184,10 @@ tbody tr:nth-child(odd) {
   border-radius: 10px;
   border: 1px solid #3a7f9d;
   color: #000;
+}
+
+.hidden {
+  display: block;
 }
 
 @media only screen and (min-width: 38em) {

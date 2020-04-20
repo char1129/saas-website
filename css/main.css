@@ -11,9 +11,9 @@ fieldset {
 }
 
 footer {
-  background-color: #3a7f9d;
-  border-top: .3rem solid #63a7ca;
-  color: #fff;
+  background-color: #63a7ca;
+  border-top: .2rem solid #3a7f9d;
+  color: #000;
 }
 
 .masthead {
@@ -166,8 +166,17 @@ a:focus {
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #63a7ca;
+  background-color: #3a7f9d;
   color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fff;
+  color: #000;
+}
+
+tfoot {
+  background-color: #fff;
 }
 
 .emph {

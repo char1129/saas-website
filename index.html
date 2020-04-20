@@ -15,13 +15,14 @@
 
   <ul class="skip-links">
     <li><a href="#welcome" tabindex="0">Jump to main content</a></li>
+    <li><a href="#main" tabindex="0">Jump to middle of page content</a></li>
     <li><a href="#nav" tabindex="0">Jump to navigation content</a></li>
     <li><a href="#footer" tabindex="0">Jump to footer</a></li>
   </ul>
 
   <header role="banner" class="masthead grid grid-middle">
     <nav role="navigation" id="nav" tabindex="0" class="unit sx-1 zindex-1000 menu-wrap list-group fixed text-center">
-      <input type="checkbox" class="toggler">
+      <input type="checkbox" class="toggler" aria-label="Drop down menu">
       <div class="hamburger">
         <div>
         </div>
@@ -29,11 +30,11 @@
       <div class="menu list-group fixed text-center">
         <div>
           <div>
-          <ul class="list-group">
-          <li><a href="index.html" aria-label="Go to Homepage">Home</a></li>
-          <li><a href="tour.html" aria-label="Go to Features">Features</a></li>
-          <li><a href="pricing.html" aria-label="Go to Plans">Plans</a></li>
-          <li><a href="sign-up.html" aria-label="Go to Sign Up and Login Page">Login/Sign Up</a></li>
+            <ul class="list-group">
+            <li><a href="index.html" aria-label="Go to Homepage">Home</a></li>
+            <li><a href="tour.html" aria-label="Go to Features">Features</a></li>
+            <li><a href="pricing.html" aria-label="Go to Plans">Plans</a></li>
+            <li><a href="sign-up.html" aria-label="Go to Sign Up and Login Page">Login/Sign Up</a></li>
           </ul>
         </div>
       </div>
@@ -43,7 +44,7 @@
     <div id="signup" class="push-0 unit xs-1 pad-b-1-2">
       <ul>
         <li><a class="right btn push-r-1-4" href="sign-up.html">Login</a></li>
-        <li><a class="right btn btn-emph push-t-0 push-r-1-4" href="sign-up.html">Sign Up</a></li>
+        <li><a class="right btn btn-emph bold push-t-0 push-r-1-4" href="sign-up.html">Sign Up</a></li>
       </ul>
     </div>
 
@@ -60,11 +61,11 @@
     </section>
   </header>
 
-  <main id="main">
+  <main role="main" id="main">
     <div class="hidden">
       <ul>
         <li><a class="right btn push-r-1-4" href="sign-up.html">Login</a></li>
-        <li><a class="right btn btn-emph push-t-0 push-r-1-4" href="sign-up.html">Sign Up</a></li>
+        <li><a class="right btn btn-emph bold push-t-0 push-r-1-4" href="sign-up.html">Sign Up</a></li>
       </ul>
     </div>
   </main>

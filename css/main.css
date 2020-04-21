@@ -185,6 +185,10 @@ input[type="checkbox"] + label::before {
   color: #000;
 }
 
+.mb {
+  background-color: rgba(99, 167, 202, .75);
+}
+
 /* Entered above here should be optimized for screens between 320px-400px
 25em = 400px
 38em = 608px

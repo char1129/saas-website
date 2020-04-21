@@ -14,13 +14,16 @@
 <body>
 
   <ul class="skip-links">
-    <li><a href="#main" tabindex="0">Jump to main content</a></li>
-    <li><a href="#nav" tabindex="0">Jump to navigation content</a></li>
-    <li><a href="#signup" tabindex="0">Jump to signup</a></li>
+    <li><a href="#nav" tabindex="0">jump to navigation content</a></li>
+    <li><a href="article" tabindex="0">jump to banner content</a></li>
+    <li><a href="#main" tabindex="0">jump to main content</a></li>
+    <li><a href="#signup" tabindex="0">jump to beginning of signup form</a></li>
+    <li><a href="#footer" tabindex="0">jump to footer content</a></li>
+    <li><a href="#section" tabindex="0">jump to company sign up part of form</a></li>
   </ul>
 
   <header role="banner" class="masthead grid grid-middle">
-    <nav role="navigation" id="nav" tabindex="0" class=" unit xs-1 zindex-1000 menu-wrap list-group fixed text-center">
+    <nav role="navigation" id="nav" tabindex="0" class="unit xs-1 zindex-1000 menu-wrap list-group fixed text-center">
       <input type="checkbox" class="toggler" id="dropdown" aria-label="drop down menu">
       <div class="hamburger">
         <div>
@@ -46,14 +49,14 @@
       </div>
     </div>
 
-    <div id="signup" class="hiddenlarge push-0 unit xs-1 pad-b-1-2">
+    <div class="hiddenlarge push-0 unit xs-1 pad-b-1-2">
       <ul>
         <li><a class="right btn push-r-1-4" href="sign-up.html">Login</a></li>
         <li><a class="right btn btn-emph bold push-t-0 push-r-1-4" href="sign-up.html">Sign Up</a></li>
       </ul>
     </div>
 
-    <section id="bannercontent" class="hiddensmall unit xs-1">
+    <section class="hiddensmall unit xs-1">
       <article class="banner embed embed-16by9">
         <img class="embed-item" src="images/loginbanner.png" alt="" aria-details="#banner">
         <div class="banner-content pin-c w-1 max-length gutter text-center">
@@ -77,7 +80,7 @@
       </article>
     </section>
 
-    <section id="bancontent" class="hiddenlarge unit xs-1">
+    <section id="article" class="hiddenlarge unit xs-1">
       <article class="banner embed embed-16by9">
         <img class="embed-item" src="images/loginbanner.png" alt="" aria-details="#banner">
         <div class="banner-content pin-c w-1 max-length gutter text-center">
@@ -104,7 +107,7 @@
     </section>
   </header>
 
-  <main role="main" id="main">
+  <main role="main" id="main" tabindex="0">
     <section class="grid grid-middle">
       <div class="container unit xs-1 s-1 m-1 l-2-3 xl-1-2 island">
         <h3 class="pad-t push-0">Don't have an account?</h3>
@@ -112,7 +115,7 @@
 
         <form method="POST" action="https://formspree.io/mvorakyw">
 
-          <fieldset class="one">
+          <fieldset id="signup" class="one" tabindex="0">
             <legend class="push-1-4 italic unit xs-1">Personal details</legend>
             <div class="push">
               <label for="first">First Name</label>
@@ -423,7 +426,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="one">
+          <fieldset id="section" class="one">
             <legend class="push-1-4 italic unit xs-1">Company Details</legend>
             <div class="push">
               <label for="compname">Company Name</label>
@@ -818,7 +821,7 @@
     </section>
   </main>
 
-  <footer role="contentinfo" id="footer" class="footer grid micro gutter">
+  <footer role="contentinfo" id="footer" tabindex="0" class="footer grid micro gutter">
     <ul class="unit xs-1-2 list-group-inline push-0 island-1-4">
       <li>
         <i class="icon i-18">

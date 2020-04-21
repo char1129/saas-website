@@ -269,6 +269,10 @@ Must be optimized up to 1900px */
     display: none;
   }
 
+  .tfoot {
+    text-align: left;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -284,6 +288,10 @@ Must be optimized up to 1900px */
   .banner,
   .card {
     min-height: 0;
+  }
+
+  .tfoot {
+    text-align: left;
   }
 
 }
@@ -313,6 +321,10 @@ Must be optimized up to 1900px */
     display: none;
   }
 
+  .tfoot {
+    text-align: center;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -323,6 +335,10 @@ Must be optimized up to 1900px */
 
   .hiddensmall {
     display: none;
+  }
+
+  .tfoot {
+    text-align: center;
   }
 
 }

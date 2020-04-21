@@ -60,7 +60,7 @@
       </div>
     </div>
 
-    <div id="signup" class="hiddenlarge push-0 unit xs-1 pad-b-1-2">
+    <div class="hiddenlarge push-0 unit xs-1 pad-b-1-2">
       <ul>
         <li><a class="right btn btn-emph bold push-t-0 push-r-1-4" href="sign-up.html">Sign up below!</a></li>
       </ul>
@@ -137,7 +137,7 @@
             </div>
             <div class="push">
               <label for="email">Email</label>
-              <input id="email" type="email" name="personalemail" placeholder="sarah@squidsprints.com" required>
+              <input id="email" type="email" name="personalemail" placeholder="sarah@squidsprints.com" required aria-label="email example:sarah@squidsprints.com">
             </div>
             <div class="push">
               <label for="tel">Phone Number</label>
@@ -430,11 +430,13 @@
               </select>
             </div>
 
-            <div class="push">
+            <div>
               <label for="postalcode">Postal Code</label>
-              <input id="postalcode" name="yourpostal" placeholder="A1A 1A1" required>
+              <input id="postalcode" name="yourpostal" placeholder="A1A 1A1" required aria-label="example of postal code: a1a 1a1">
             </div>
           </fieldset>
+
+          <a class="micro btn bold push" href="legal.html" tabindex="0">Why do I need to add my personal information?</a>
 
           <fieldset id="section" class="one">
             <legend class="push-1-4 italic unit xs-1">Company Details</legend>
@@ -448,7 +450,7 @@
             </div>
             <div class="push">
               <label for="compmail"> Company Email</label>
-              <input id="compmail" name="companyemail" type="email" placeholder="sarah@squidsprints.com" required>
+              <input id="compmail" name="companyemail" type="email" placeholder="sarah@squidsprints.com" required aria-label="example: sarah@squidsprints.com">
             </div>
             <div class="push ">
               <label for="comptel">Company Contact Number</label>
@@ -456,7 +458,7 @@
             </div>
             <div class="push">
               <label for="compadd">Company Address</label>
-              <input id="compadd" name="compaddress" placeholder="for deliveries" required>
+              <input id="compadd" name="compaddress" placeholder="for deliveries" required aria-label="company address supplied here must be one that accepts the delivery">
             </div>
             <div class="push">
               <label for="compcity">City/Town</label>
@@ -759,7 +761,7 @@
             </div>
             <div class="push">
               <label for="security">Security Code</label>
-              <input type="number" name="sc" id="security" placeholder="3 or 4 digit number">
+              <input type="number" name="sc" id="security" placeholder="3 or 4 digit number" aria-label="security number for credit card is 3 to 4 digits long">
             </div>
             <div class="push">
               <label for="date">Expiry Date</label>

@@ -24,7 +24,27 @@
 
   <header role="banner" class="masthead grid grid-middle">
 
-    <nav role="navigation" id="nav" tabindex="0" class="dropdown nav unit xs-1 l-1-4">
+    <nav role="navigation" id="nav" tabindex="0" class="unit xs-1 zindex-1000 menu-wrap list-group fixed text-center">
+      <input type="checkbox" class="toggler" id="dropdown" required aria-label="drop down menu">
+      <div class="hamburger">
+        <div>
+        </div>
+      </div>
+      <div class="menu list-group fixed text-center">
+        <div>
+          <div>
+            <ul class="list-group">
+              <li><a href="index.html" aria-label="Go to Homepage">Home</a></li>
+              <li><a href="tour.html" aria-label="Go to Features">Features</a></li>
+              <li><a href="pricing.html" aria-label="Go to Plans">Plans</a></li>
+              <li><a href="sign-up.html" aria-label="Go to Sign Up and Login Page">Login/Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <nav role="navigation" id="nav" tabindex="0" class="dropdown nav unit xs-1 l-1-4">
       <img src="images/hamburgericon.png" alt="drop down menu">
       <ul class="list-group-inline mega push-0 dropdown-content">
         <li><a class="btn ib gutter-1-4" href="index.html"><span>Home</span></a></li>
@@ -32,7 +52,7 @@
         <li><a class="btn ib gutter-1-4" href="pricing.html"><span>Plans</span></a></li>
         <li><a class="btn ib gutter-1-4" href="sign-up.html"><span>Sign Up/Login</span></a></li>
       </ul>
-    </nav>
+    </nav> -->
 
     <div class="hiddensmall push-0 unit xs-1 island-1-2 right">
       <div class="right">
@@ -40,17 +60,16 @@
       </div>
     </div>
 
-    <div class="hiddenlarge push-0 unit xs-1-2 pad-b-1-2">
+    <div id="signup" class="hiddenlarge push-0 unit xs-1 pad-b-1-2">
       <ul>
-        <li><a class="right btn push-r-1-4" href="sign-up.html">Login</a></li>
-        <li><a class="right btn btn-emph bold push-t-0 push-r-1-4" href="sign-up.html">Sign Up</a></li>
+        <li><a class="right btn btn-emph bold push-t-0 push-r-1-4" href="sign-up.html">Sign up below!</a></li>
       </ul>
     </div>
 
-    <section class="hiddensmall unit xs-1">
+    <section id="bannercontent" class="hiddensmall unit xs-1">
       <article class="banner embed embed-16by9">
-        <img class="embed-item" src="images/loginbanner.png" alt="" aria-details="#banner">
-        <div class="banner-content pin-c w-1 max-length gutter text-center">
+        <img class="embed-item" src="images/tourbanner.png" alt="" aria-details="#banner">
+        <div class="banner-content pin-c max-length gutter text-center">
           <div class="grid grid-middle loginbck">
             <div class="container unit xs-1 s-1 m-1 l-2-3 xl-1-2 pad-t-1-2">
               <div class="inline-block">
@@ -71,7 +90,7 @@
       </article>
     </section>
 
-    <section role="complementary" id="article" class="hiddenlarge unit xs-1">
+    <section id="bancontent" class=" hiddenlarge unit xs-1">
       <article class="banner embed embed-16by9">
         <img class="embed-item" src="images/loginbanner.png" alt="" aria-details="#banner">
         <div class="banner-content pin-c w-1 max-length gutter text-center">
@@ -836,7 +855,7 @@
       </li>
     </ul>
     <div class="unit xs-1-2 bold inline-block pad-t-1-4 pad-r-1-4">
-      <p class="right bold bp push-0">© Squids Prints</p>
+      <a class="right bold bp push-0" href="#">© Squids Prints</a>
     </div>
   </footer>
 

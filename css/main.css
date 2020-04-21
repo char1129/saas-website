@@ -26,6 +26,10 @@ footer {
   text-align: center;
 }
 
+.navburger {
+  background-image: url("images/hamburgernav.png");
+}
+
 .navimg {
   width: 30%;
   height: 100%;

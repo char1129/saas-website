@@ -66,7 +66,6 @@ body {
   opacity: 0.5;
 }
 
-
 .menu-wrap {
   position: fixed;
   top: 0;
@@ -206,4 +205,10 @@ body {
 .menu-wrap .menu > div  > div > ul > li > a {
   color: inherit;
   transition: color 0.4s ease;
+}
+
+.menu-wrap .menu > div  > div > ul > li > a:hover {
+  color: #000;
+  background-color: #fff;
+  z-index: 1001;
 }

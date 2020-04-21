@@ -132,9 +132,10 @@ tfoot {
   background-color: #fff;
 }
 
+/*
 .table-wrapper {
   overflow: hidden;
-}
+} */
 
 .wrapper {
   max-width: 90em;
@@ -183,7 +184,6 @@ input[type="checkbox"] + label::before {
 .bp {
   color: #000;
 }
-
 
 /* Entered above here should be optimized for screens between 320px-400px
 25em = 400px

@@ -26,10 +26,6 @@ footer {
   text-align: center;
 }
 
-.navburger {
-  background-image: url("images/hamburgernav.png");
-}
-
 .navimg {
   width: 30%;
   height: 100%;
@@ -39,19 +35,7 @@ footer {
   min-height: 16em;
   min-width: 320px;
   color: #000;
-
-  /*
-  position: relative;
-  overflow: hidden;
-  max-height: 4rem;
-  with added img-flex tag to banner image */
 }
-
-/*
-.banner-content {
-  position: absolute;
-  color: #fff;
-} */
 
 .banimg {
   width: 70%;
@@ -89,24 +73,6 @@ a:focus {
   outline: 3px solid #63a7ca;
 }
 
-/* .nav a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-}
-
-.nav a span {
-  border-bottom: .3rem solid #63a7ca;
-}
-
-.nav a:hover span,
-.nav a:focus span {
-  border-bottom-color: #63a7ca;
-  outline: 3px solid #63a7ca;
-  background-color: #fff;
-  color: #3a7f9d;
-} */
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -137,13 +103,6 @@ a:focus {
   outline-color: #fff;
 }
 
-/* .btn {
-  background-color: #3a7f9d;
-  border-radius: 4px;
-  border: 1px solid #fff;
-  color: #fff;
-} */
-
 .btn-emph {
   background-color: #df6637;
   border-radius: 4px;
@@ -159,30 +118,6 @@ a:focus {
   color: #fff;
 }
 
-/*
-.btn-light {
-  background-color: #63a7ca;
-  border-color: #63a7ca;
-  color: #3a7f9d;
-}
-
-.btn-light:hover,
-.btn-light:focus {
-  background-color: #3a7f9d;
-  border-color: #3a7f9d;
-} */
-
-.btn-banner {
-  border-color: #63a7ca;
-  color: #fff;
-}
-
-.btn-banner:hover,
-.btn-banner:focus {
-  border-color: #fff;
-  color: #3a7f9d;
-}
-
 tbody tr:nth-child(odd) {
   background-color: #3a7f9d;
   color: #fff;
@@ -195,23 +130,6 @@ tbody tr:nth-child(even) {
 
 tfoot {
   background-color: #fff;
-}
-
-/* td {
-  min-width: 15rem;
-  width: 100%;
-} */
-
-.emph {
-  color: #3a7f9d;
-}
-
-.p2, .wp {
-  color: #fff;
-}
-
-.bp {
-  color: #000;
 }
 
 .table-wrapper {
@@ -253,6 +171,19 @@ input[type="checkbox"] + label::before {
 .hiddenlarge {
   display: none;
 }
+
+.emph {
+  color: #3a7f9d;
+}
+
+.p2, .wp {
+  color: #fff;
+}
+
+.bp {
+  color: #000;
+}
+
 
 /* Entered above here should be optimized for screens between 320px-400px
 25em = 400px

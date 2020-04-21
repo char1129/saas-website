@@ -80,6 +80,12 @@ color: #fff;
 
 .btn:hover {
   opacity: 0.5;
+  outline-color: #000;
+}
+
+.btn:focus {
+  opacity: 0.5;
+  outline-color: #000;
 }
 
 

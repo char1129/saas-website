@@ -60,12 +60,12 @@
           <div class="grid grid-middle loginbck">
             <div class="container unit xs-1 s-1 m-1 l-2-3 xl-1-2 pad-t-1-2">
               <div class="inline-block">
-                <label class="wp bold" for="emaillogin">Email</label>
-                <input id="emaillogin" type="email" required>
+                <label class="wp bold" for="maillogin">Email</label>
+                <input id="maillogin" type="email" required>
               </div>
               <div class="inline-block">
-                <label class="wp bold" for="passwordlogin">Password</label>
-                <input id="passwordlogin" type="password" required>
+                <label class="wp bold" for="passlogin">Password</label>
+                <input id="passlogin" type="password" required>
               </div>
             </div>
             <div class="unit xs-1 push-1-2">
@@ -77,7 +77,7 @@
       </article>
     </section>
 
-    <section id="bannercontent" class="hiddenlarge unit xs-1">
+    <section id="bancontent" class="hiddenlarge unit xs-1">
       <article class="banner embed embed-16by9">
         <img class="embed-item" src="images/loginbanner.png" alt="" aria-details="#banner">
         <div class="banner-content pin-c w-1 max-length gutter text-center">
@@ -109,58 +109,62 @@
       <div class="container unit xs-1 s-1 m-1 l-2-3 xl-1-2 island">
         <h3 class="pad-t push-0">Don't have an account?</h3>
         <p>Sign up now! It's free!</p>
-        <form method="POST" action="https://formspree.io/mvorakyw">
-          <fieldset class="one">
-            <legend class="push-1-4 italic unit xs-1">Personal details</legend>
-            <div class="push">
-              <label for="first">First Name</label>
-              <input id="first" required>
-            </div>
-            <div class="push">
-              <label for="last">Last Name</label>
-              <input id="last" required>
-            </div>
-            <div class="push">
-              <label for="email">Email</label>
-              <input id="email" type="email" placeholder="sarah@squidsprints.com" required>
-            </div>
-            <div class="push">
-              <label for="tel">Phone Number</label>
-              <input id="tel" required>
-            </div>
-            <div class="push">
-              <label for="password">Password</label>
-              <input id="password" type="password" required>
-            </div>
-            <div class="push">
-              <label for="address">Street Address</label>
-              <input id="address" required>
-            </div>
-            <div class="push">
-              <label for="city">City/Town</label>
-              <input id="city" required>
-            </div>
-            <div class="push">
-              <label for="province">Province</label>
-              <select id="province" name="province" required>
-                <option>Alberta</option>
-                <option>British Columbia</option>
-                <option>Manitoba</option>
-                <option>New Brunswick</option>
-                <option>Newfoundland and Labrador</option>
-                <option>Nova Scotia</option>
-                <option>Ontario</option>
-                <option>Prince Edward Island</option>
-                <option>Quebec</option>
-                <option>Saskatchewan</option>
-                <option>Northwest Territories</option>
-                <option>Nunavut</option>
-                <option>Yukon</option>
-              </select>
-            </div>
-            <div class="push">
-              <label for="country">Country</label>
-              <select id="country" name="country" required>
+      </div>
+      <form method="POST" action="https://formspree.io/mvorakyw">
+
+        <fieldset class="one">
+          <legend class="push-1-4 italic unit xs-1">Personal details</legend>
+          <div class="push">
+            <label for="first">First Name</label>
+            <input id="first" name="yourfirstname" required>
+          </div>
+          <div class="push">
+            <label for="last">Last Name</label>
+            <input id="last" name="yourlastname" required>
+          </div>
+          <div class="push">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="personalemail" placeholder="sarah@squidsprints.com" required>
+          </div>
+          <div class="push">
+            <label for="tel">Phone Number</label>
+            <input id="tel" name="personaltel" required>
+          </div>
+          <div class="push">
+            <label for="password">Password</label>
+            <input id="password" name="personalpassword" type="password" required>
+          </div>
+          <div class="push">
+            <label for="address">Street Address</label>
+            <input id="address" name="youraddress" required>
+          </div>
+          <div class="push">
+            <label for="city">City/Town</label>
+            <input id="city" name="yourcity" required>
+          </div>
+
+          <div class="push">
+            <label for="province">Province</label>
+            <select id="province" name="yourprovince">
+              <option>Alberta</option>
+              <option>British Columbia</option>
+              <option>Manitoba</option>
+              <option>New Brunswick</option>
+              <option>Newfoundland and Labrador</option>
+              <option>Nova Scotia</option>
+              <option>Ontario</option>
+              <option>Prince Edward Island</option>
+              <option>Quebec</option>
+              <option>Saskatchewan</option>
+              <option>Northwest Territories</option>
+              <option>Nunavut</option>
+              <option>Yukon</option>
+            </select>
+          </div>
+
+          <div class="push">
+            <label for="country">Country</label>
+            <select id="country" name="yourcountry">
               <option>Afghanistan</option>
               <option>Åland Islands</option>
               <option>Albania</option>
@@ -410,60 +414,64 @@
               <option>Yemen</option>
               <option>Zambia</option>
               <option>Zimbabwe</option>
-              </select>
-            </div>
+            </select>
+          </div>
+
+          <div class="push">
+            <label for="postalcode">Postal Code</label>
+            <input id="postalcode" name="yourpostal" placeholder="A1A 1A1" required>
+          </div>
+        </fieldset>
+
+        <fieldset class="one">
+          <legend class="push-1-4 italic unit xs-1">Company Details</legend>
+          <div class="push">
+            <label for="compname">Company Name</label>
+            <input id="compname" name="companyname" required>
+          </div>
             <div class="push">
-              <label for="postalcode">Postal Code</label>
-              <input id="postalcode" placeholder="A1A 1A1" required>
-            </div>
-          </fieldset>
-          <fieldset class="one">
-            <legend class="push-1-4 italic unit xs-1">Company Details</legend>
+            <label for="atto">Attention to:</label>
+            <input id="atto" name="atto">
+          </div>
+          <div class="push">
+            <label for="compmail"> Company Email</label>
+            <input id="compmail" name="companyemail" type="email" placeholder="sarah@squidsprints.com" required>
+          </div>
+          <div class="push ">
+            <label for="comptel">Company Contact Number</label>
+            <input id="comptel" name="companytel" required>
+          </div>
             <div class="push">
-              <label for="compname">Company Name</label>
-              <input id="compname" required>
-            </div>
-            <div class="push">
-              <label for="atto">Attention to:</label>
-              <input id="atto" optional>
-            </div>
-            <div class="push">
-              <label for="compmail"> Company Email <span class="micro italic"><span></label>
-              <input id="compmail" type="email" placeholder="sarah@squidsprints.com" required>
-            </div>
-            <div class="push ">
-              <label for="comptel">Company Contact Number</label>
-              <input id="comptel"  required>
-            </div>
-            <div class="push">
-              <label for="compadd">Company Address</label>
-              <input id="compadd" placeholder="for deliveries" required>
-            </div>
-            <div class="push">
-              <label for="compcity">City/Town</label>
-              <input id="compcity" required>
-            </div>
-            <div class="push">
-              <label for="comprov">Province</label>
-              <select id="comprov" name="province" required>
-                <option>Alberta</option>
-                <option>British Columbia</option>
-                <option>Manitoba</option>
-                <option>New Brunswick</option>
-                <option>Newfoundland and Labrador</option>
-                <option>Nova Scotia</option>
-                <option>Ontario</option>
-                <option>Prince Edward Island</option>
-                <option>Quebec</option>
-                <option>Saskatchewan</option>
-                <option>Northwest Territories</option>
-                <option>Nunavut</option>
-                <option>Yukon</option>
-              </select>
-            </div>
-            <div class="push">
-              <label for="comcount">Country</label>
-              <select id="compcount" name="country" required>
+            <label for="compadd">Company Address</label>
+            <input id="compadd" name="compaddress" placeholder="for deliveries" required>
+          </div>
+          <div class="push">
+            <label for="compcity">City/Town</label>
+            <input id="compcity" name="companycity" required>
+          </div>
+
+          <div class="push">
+            <label for="comprov">Province</label>
+            <select id="comprov" name="compprovince">
+              <option >Alberta</option>
+              <option >British Columbia</option>
+              <option >Manitoba</option>
+              <option >New Brunswick</option>
+              <option >Newfoundland and Labrador</option>
+              <option >Nova Scotia</option>
+              <option >Ontario</option>
+              <option >Prince Edward Island</option>
+              <option >Quebec</option>
+              <option>Saskatchewan</option>
+              <option>Northwest Territories</option>
+              <option>Nunavut</option>
+              <option>Yukon</option>
+            </select>
+          </div>
+
+          <div class="push">
+            <label for="compcount">Country</label>
+            <select id="compcount" name="compcountry">
               <option>Afghanistan</option>
               <option>Åland Islands</option>
               <option>Albania</option>
@@ -713,85 +721,90 @@
               <option>Yemen</option>
               <option>Zambia</option>
               <option>Zimbabwe</option>
-              </select>
-              <div class="push">
-                <label for="comppost">Company Postal Code</label>
-                <input id="comppost" placeholder="A1A 1A1" required>
+            </select>
+          </div>
+          <div class="push">
+            <label for="comppost">Company Postal Code</label>
+            <input id="comppost" name="comppost" placeholder="A1A 1A1" required>
+          </div>
+        </fieldset>
+
+        <fieldset class="one">
+          <legend class="push-1-4 italic unit xs-1">Plan and Payment</legend>
+          <div class="push">
+            <label for="plan">Plan</label>
+            <select id="plan" name="compplan">
+              <option>Just Print: Basic</option>
+              <option>Just Print: Plus</option>
+              <option>Print plus Support: Basic</option>
+              <option>Print plus Support: Plus</option>
+            </select>
+          </div>
+          <div class="push">
+            <label for="ccard">Credit Card Number</label>
+            <input type="number" name="cc" id="ccard">
+          </div>
+            <div class="push">
+            <label for="security">Security Code</label>
+            <input type="number" name="sc" id="security" placeholder="3 or 4 digit number">
+          </div>
+          <div class="push">
+            <label for="date">Expiry Date</label>
+            <input id="date" name="date" type="date">
+          </div>
+        </fieldset>
+
+        <fieldset class="push one">
+          <legend class="push-1-4 italic">Which of our print services were you wanting to utilize?</legend>
+          <div class="grid">
+            <div class="unit xs-1 s-1 m-1-2 l-1-2">
+              <div class="pad-t-1-8">
+                <input id="bookb" type="checkbox">
+                <label for="bookb">Book Binding</label>
               </div>
-          </fieldset>
+              <div class="pad-t-1-8">
+                <input id="pagep" type="checkbox">
+                <label for="pagep">Page Printing</label>
+              </div>
+              <div class="pad-t-1-8">
+                <input id="bp" type="checkbox">
+                <label for="bp">Brochures/Pamphlets</label>
+              </div>
+              <div class="pad-t-1-8">
+                <input id="bb" type="checkbox">
+                <label for="bb">Billboards</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="push one">
+          <legend class="push-1-4 italic">Which of our support services were you wanting to utilize?</legend>
+          <div class="grid">
+            <div class="unit xs-1 s-1 m-1-2 l-1-2">
+              <div class="pad-t-1-8">
+                <input id="pagel" type="checkbox">
+                <label for="pagel">Page Layout</label>
+              </div>
+              <div class="pad-t-1-8">
+                <input id="proof" type="checkbox">
+                <label for="proof">Proofing</label>
+              </div>
+              <div class="pad-t-1-8">
+                <input id="cc" type="checkbox">
+                <label for="cc">Copywriting</label>
+              </div>
+              <div class="pad-t-1-8">
+                <input id="gndup" type="checkbox">
+                <label for="gndup">Ground-Up Services</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
           <fieldset class="one">
-            <legend class="push-1-4 italic unit xs-1">Plan and Payment</legend>
+            <legend class="italic bold">Specifics <span class="micro italic">(optional)</span></legend>
             <div class="push">
-              <label for="plan">Plan</label>
-              <select id="plan" name="plan">
-                <option>Just Print: Basic</option>
-                <option>Just Print: Plus</option>
-                <option>Print plus Support: Basic</option>
-                <option>Print plus Support: Plus</option>
-              </select>
-            </div>
-            <div class="push">
-              <label for="ccard">Credit Card Number</label>
-              <input type="number" id="ccard">
-            </div>
-            <div class="push">
-              <label for="security">Security Code</label>
-              <input type="number" id="security" placeholder="3 or 4 digit number">
-            </div>
-            <div class="push">
-              <label for="date">Expiry Date</label>
-              <input id="date" type="date">
-            </div>
-          </fieldset>
-          <div class="container">
-            <fieldset class="push">
-              <legend class="push-1-4 italic">Which of our print services were you wanting to utilize?</legend>
-              <div class="grid">
-                <div class="unit xs-1 s-1 m-1-2 l-1-2">
-                  <div class="pad-t-1-8">
-                    <input id="bookb" type="checkbox">
-                    <label for="bookb">Book Binding</label>
-                  </div>
-                  <div class="pad-t-1-8">
-                    <input id="pagep" type="checkbox">
-                    <label for="pagep">Page Printing</label>
-                  </div>
-                  <div class="pad-t-1-8">
-                    <input id="bp" type="checkbox">
-                    <label for="bp">Brochures/Pamphlets</label>
-                  </div>
-                  <div class="pad-t-1-8">
-                    <input id="bb" type="checkbox">
-                    <label for="bb">Billboards</label>
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset class="push">
-                <legend class="push-1-4 italic">Which of our support services were you wanting to utilize?</legend>
-                <div class="grid">
-                  <div class="unit xs-1 s-1 m-1-2 l-1-2">
-                    <div class="pad-t-1-8">
-                      <input id="pagel" type="checkbox">
-                      <label for="pagel">Page Layout</label>
-                    </div>
-                    <div class="pad-t-1-8">
-                      <input id="proof" type="checkbox">
-                      <label for="proof">Proofing</label>
-                    </div>
-                    <div class="pad-t-1-8">
-                      <input id="cc" type="checkbox">
-                      <label for="cc">Copywriting</label>
-                    </div>
-                    <div class="pad-t-1-8">
-                      <input id="gndup" type="checkbox">
-                      <label for="gndup">Ground-Up Services</label>
-                    </div>
-                  </div>
-                </fieldset>
-              </div>
-            <fieldset class="one unit xs-1">
-              <legend class="italic bold">Specifics <span class="micro italic">(optional)</span></legend>
-              <div class="push">
               <label for="details" class="push-1-4">Were there any specific details you wanted us to know regarding your printing needs?</label>
               <textarea id="details" name="message" required></textarea>
               <input type="hidden" name="secret" value="Important details">
@@ -800,8 +813,7 @@
               <button class="btn btn-light center" type="submit">Submit</button>
             </div>
           </fieldset>
-        </form>
-      </div>
+      </form>
     </section>
   </main>
 
